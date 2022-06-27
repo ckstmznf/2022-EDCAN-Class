@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edt_main_firstNum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:hint="첫번째 수"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_main_puls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="+"
+        android:textSize="24sp"
+
+        app:layout_constraintTop_toBottomOf="@id/edt_main_firstNum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/edt_main_secondNum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:hint="두번째 수"
+        android:inputType="number"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_main_puls"
+        />
+
+    <TextView
+        android:id="@+id/txt_main_equal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="="
+        android:textSize="24sp"
+
+        app:layout_constraintTop_toBottomOf="@id/edt_main_secondNum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txt_main_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="계산 결과"
+        android:textSize="24sp"
+
+        app:layout_constraintTop_toBottomOf="@id/txt_main_equal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <Button
+        android:id="@+id/btn_main_calc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:rippleColor="#000"
+
+        android:text="계산 하기"
+        android:textSize="24sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
